@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Login</h2>
+
+<h4>Formulario de logueo</h4>
+<fieldset class="form-group">
+    <legend>Login</legend>
+    <p>El usuario es Rorro pass 123 en caso de usar la base "nueva"</p>
+
+    <form method="post" action="/Home/Login">
+        <input type="text" class="form-control" name="txtUser" placeholder="Username" />
+        <br />
+        <input type="password" class="form-control" name="txtContra" placeholder="Password" />
+        <br />
+        <input type="submit" name="btnLoguear" value="Loguear" class="btn btn-success" />
+    </form>
+</fieldset>

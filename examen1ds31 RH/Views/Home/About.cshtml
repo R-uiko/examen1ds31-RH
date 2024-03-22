@@ -1,0 +1,14 @@
+﻿@{
+    ViewBag.Title = "About";
+}
+
+<pre>
+Sesion iniciada | usuario: @Session["nombre_usuario"] (@Session["nivel_usuario"]);
+@Html.ActionLink("Cerrar Sesion", "CerrarSesion", "Home");
+</pre>
+<main aria-labelledby="title">
+    <h2 id="title">@ViewBag.Title.</h2>
+    <h3>@ViewBag.Message</h3>
+
+    <p>Use this area to provide additional information.</p>
+</main>
